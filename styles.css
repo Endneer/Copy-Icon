@@ -1,0 +1,27 @@
+.copy-icon {
+}
+
+.copy-icon div {
+    width: 12px;
+    height: 16px;
+    border: solid 2px #616161;
+    background-color: white;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.copy-icon div::before {
+    content: "";
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-top: solid 7px white;
+    border-left: solid 7px #616161;
+}
+
+.copy-icon div + div {
+    top: -23px;
+    right: -7px;
+    z-index: 1;
+}
